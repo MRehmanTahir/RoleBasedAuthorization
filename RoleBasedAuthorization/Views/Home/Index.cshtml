@@ -31,3 +31,18 @@
         </section>
     </div>
 </main>
+
+
+
+
+<h2>All Testing Actions</h2>
+
+<ul>
+    @for (int i = 1; i <= 40; i++)
+    {
+        var actionName = $"Action{i:00}";
+        <li>
+            <a href="@Url.Action(actionName, "Testing")">@actionName</a>
+        </li>
+    }
+</ul>
